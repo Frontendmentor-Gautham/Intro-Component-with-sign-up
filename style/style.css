@@ -131,7 +131,8 @@ button:hover{
 .error-text{
     color: var(--Red);
     font-size: 14px;
-    margin-left: 170px;
+    margin-left: 180px;
+    
     letter-spacing: 1px;
 }
 
