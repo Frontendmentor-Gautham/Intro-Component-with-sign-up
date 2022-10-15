@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+
+:root{
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--Red);
+    background-image: url('/images/bg-intro-desktop.png');
+    background-size: cover;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.container> div{
+    flex: 1;
+    padding: 0 20px;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+p{
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.box{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box p{
+    margin: 0;
+}
+
+.box-blue{
+    background-color: var(--Blue);
+    padding: 20px;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid var(--Grayish-Blue);
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 25px;
+    display: block;
+    width: 100%;
+}
+
+input:focus{
+    border: 1px solid var(--Blue);
+}
+
+button{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--Green);
+    border-radius: 5px;
+    border: 1px solid var(--Green);
+    border-bottom-width: 3px;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 25px;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.form-control{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-control small{
+    color: var(--Red);
+    font-weight: 600;
+    position: absolute;
+    bottom: -24px;
+    right: 0;
+    opacity: 0;
+    text-align: right;
+}
+
+.error{
+    border: 2px solid var(--Red);
+    background-image: url('/images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.error-text{
+    color: var(--Red);
+    font-size: 14px;
+    margin-left: 170px;
+    letter-spacing: 1px;
+}
+
+
+small{
+    display: block;
+    color: #bbb;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+small strong{
+    color: var(--Red);
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .right{
+        margin-top: 50px;
+    }
+
+    .left{
+        text-align: center;
+    }
+
+    .left p{
+        margin-top: 20px;
+    }
+}
